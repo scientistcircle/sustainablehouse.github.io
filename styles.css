@@ -1,0 +1,503 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+/* Header Section */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #6ABF4B;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(161, 91, 91, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    font-size: 12pt;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #FFDD57;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #4fff64, #698da6);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    height: 100vh; /* Tinggi hero sesuai dengan tinggi layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h2 {
+    font-size: 24pt;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    font-size: 12pt;
+    max-width: 6000px; /* Maksimal lebar untuk teks */
+    text-align: center;
+}
+
+.btn {
+    background-color: #FFDD57;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Other Sections (About, Education, Footer) */
+.about, .education, .footer {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.about p, .education p {
+    color: #555;
+}
+
+/* About Us Section */
+/* About Us Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+/* Gambar Persegi */
+.about-images {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Teks About Us */
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 20pt;
+    color: #6ABF4B;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 12pt;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-images {
+        max-width: 100%;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Section Container */
+.education {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+}
+
+.education h2 {
+    font-size: 2rem;
+    color: #6ABF4B;
+    margin-bottom: 2rem;
+}
+
+/* Principles Cards */
+.principles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Individual Card Style */
+.principle-card {
+    flex: 1;
+    max-width: 30%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.principle-card p {
+    margin-bottom: 1rem; /* Tambahkan jarak vertikal di bawah deskripsi */
+}
+
+
+.principle-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.principle-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Rasio aspek persegi */
+    object-fit: cover; /* Gambar akan disesuaikan */
+    border-radius: 10px;
+}
+
+
+
+/* Card Text */
+.principle-card h3 {
+    font-size: 1.5rem;
+    color: #6ABF4B;
+    margin-bottom: 0.5rem;
+}
+
+.principle-card {
+    flex: 1;
+    max-width: 25%; /* Sesuaikan agar lebih kecil */
+    min-width: 200px; /* Tetapkan ukuran minimum untuk responsif */
+    margin: 0 auto; /* Pusatkan card */
+}
+
+@media (max-width: 768px) {
+    .principle-card {
+        max-width: 100%; /* Lebar penuh untuk layar kecil */
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Button in Card */
+.principle-card .btn {
+    background-color: #FFDD57;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.principle-card .btn:hover {
+    background-color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .principles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principle-card {
+        max-width: 100%;
+    }
+}
+
+/* Intro Benefits Section */
+.intro-benefits {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    margin-bottom: 0rem;
+}
+
+.intro-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 3000px;
+    margin: 0 auto;
+}
+
+.intro-image {
+    flex: 1;
+    margin-left: 5rem;
+    max-width: 10000%;
+}
+
+.intro-image img {
+    width: 130%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.intro-text {
+    flex: 2;
+    text-align: left;
+}
+
+.intro-text h3 {
+    font-size: 16pt;
+    margin-left: 12rem;
+    color: #6ABF4B;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 12pt;
+    color: #555;
+    margin-left: 12rem;
+    line-height: 1.6;
+    max-width: 100;
+    margin-right: 10%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .intro-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image {
+        max-width: 100%;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+}
+
+
+/* Benefits Section */
+.benefits {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    color: #6ABF4B;
+    margin-bottom: 3rem;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 80%;
+    max-width: 5000px;
+}
+
+.benefit-image {
+    flex: 1;
+    max-width: 5000px;
+}
+
+.benefit-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.benefit-description {
+    flex: 2;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.benefit-description p {
+    font-size: 14pt;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefit-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .benefit-image {
+        max-width: 100px;
+    }
+
+    .benefit-description {
+        text-align: center;
+    }
+}
+
+/* Footer Styling */
+#footer {
+    background: url('bgft.jpg') no-repeat center center/cover;
+    padding: 4rem 2rem;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Menambahkan posisi relatif agar overlay bisa ditempatkan dengan benar */
+}
+
+/* Menambahkan overlay gelap di atas gambar latar */
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Menambahkan efek gelap dengan transparansi 50% */
+    z-index: 1; /* Agar overlay berada di atas gambar latar */
+}
+
+/* Main footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative; /* Konten berada di atas overlay */
+    z-index: 2;
+}
+
+/* Text section */
+.footer-text h3 {
+    font-size: 2rem;
+    color: #92ff6a; /* Green for sustainability */
+    margin-bottom: 1rem;
+}
+
+.footer-text p {
+    font-size: 12pt;
+    line-height: 1.6;
+    margin-right: 10%;
+    color: #ffffff;
+}
